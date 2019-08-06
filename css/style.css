@@ -110,3 +110,16 @@ body {
 .skill-title {
     margin-top: 15px;
 }
+
+.contactSection {
+    background-color: #DEECFF;
+}
+
+.social-links {
+    font-size: 40px;
+}
+
+.social-icon {
+    margin: 10px;
+    color: #35477D
+}
