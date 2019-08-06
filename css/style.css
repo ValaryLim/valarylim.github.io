@@ -46,7 +46,7 @@ body {
 }
 
 .title-message .heading .main {
-    color: #ffffff;
+    color: #DEECFF;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
     font-weight: 100;
     letter-spacing: 7px;
@@ -54,7 +54,7 @@ body {
 }
 
 .sub {
-    color: #ffffff;
+    color: #DEECFF;
     text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
     font-weight: 100;
     letter-spacing: 4px;
@@ -67,6 +67,10 @@ body {
 
 .aboutImage {
     max-width: 100%;
+}
+
+.aboutSection {
+    background-color: #DEECFF;
 }
 
 .skillsSection {
