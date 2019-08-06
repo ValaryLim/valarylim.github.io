@@ -272,6 +272,7 @@ body {
 }
 
 #navigation li {
+<<<<<<< HEAD
     padding: 0 20px;
 }
 
@@ -281,13 +282,23 @@ body {
 
 .nav-link:hover {
     color: #C6CFFF;
+=======
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #35477D;
+>>>>>>> master
 }
 
 .navbar-brand, 
 .navbar-brand:hover {
     color: #35477D;
+<<<<<<< HEAD
     padding: 0 20px;
     font-weight: 500;
+=======
+>>>>>>> master
 }
 
 .navbar-toggler-icon {
