@@ -270,13 +270,19 @@ body {
     padding: 0 10px;
 }
 
-#navigation li a {
-    color: #35477D;
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #C6CFFF;
 }
 
 .navbar-brand, 
 .navbar-brand:hover {
     color: #35477D;
+    padding: 0 20px;
+    font-weight: 500;
 }
 
 .navbar-toggler-icon {
