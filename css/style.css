@@ -115,10 +115,6 @@ body {
     background-color: #DEECFF;
 }
 
-.contactSection {
-    background-color: #DEECFF;
-}
-
 .social-links {
     font-size: 40px;
 }
@@ -261,4 +257,33 @@ body {
 .copyright {
     margin: 30px 5px;
     font-size: 10px; 
+}
+
+#navigation {
+    background-color: #fff;
+    padding: 17px 10px;
+    z-index: 100;
+    width: 100%;
+}
+
+#navigation li {
+    padding: 0 10px;
+}
+
+#navigation li a {
+    color: #35477D;
+}
+
+.navbar-brand, 
+.navbar-brand:hover {
+    color: #35477D;
+}
+
+.navbar-toggler-icon {
+    color: #35477D;
+}
+
+.fixedNav #navigation {
+    position: fixed;
+    top: 0;
 }
