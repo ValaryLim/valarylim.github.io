@@ -124,6 +124,11 @@ body {
     color: #35477D
 }
 
+.social-icon:hover {
+    margin: 10px;
+    color: #C6CFFF;
+}
+
 .filter {
     text-align: center;
     width: 100%;
@@ -267,16 +272,44 @@ body {
 }
 
 #navigation li {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e8f1fdfe7e6d2a643d68f9a8ddfce8c23faa4600
+    padding: 0 20px;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #C6CFFF;
+<<<<<<< HEAD
+=======
     padding: 0 10px;
 }
 
 #navigation li a {
     color: #35477D;
+>>>>>>> master
+=======
+>>>>>>> e8f1fdfe7e6d2a643d68f9a8ddfce8c23faa4600
 }
 
 .navbar-brand, 
 .navbar-brand:hover {
     color: #35477D;
+<<<<<<< HEAD
+<<<<<<< HEAD
+    padding: 0 20px;
+    font-weight: 500;
+=======
+>>>>>>> master
+=======
+    padding: 0 20px;
+    font-weight: 500;
+>>>>>>> e8f1fdfe7e6d2a643d68f9a8ddfce8c23faa4600
 }
 
 .navbar-toggler-icon {
