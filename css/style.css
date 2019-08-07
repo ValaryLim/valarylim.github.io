@@ -329,6 +329,7 @@ body {
 }
 
 .jobCompany,
-.activityPosition {
+.activityPosition,
+.eduDegree {
     font-style: italic;
 }
