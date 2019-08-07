@@ -333,3 +333,7 @@ body {
 .eduDegree {
     font-style: italic;
 }
+
+.courseworkList {
+    list-style-type: circle;
+}
