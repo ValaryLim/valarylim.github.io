@@ -297,10 +297,7 @@ body {
 .jobSkill, 
 .activitySkill,
 .eduSkill {
-<<<<<<< HEAD
-=======
     color: #35477D;
->>>>>>> master
     margin-right: 10px;
     text-transform: uppercase;
     font-weight: 500;
@@ -333,10 +330,6 @@ body {
 }
 
 .jobCompany,
-<<<<<<< HEAD
-.activityPosition {
-    font-style: italic;
-=======
 .activityPosition,
 .eduDegree {
     font-style: italic;
@@ -358,11 +351,7 @@ body {
     color: #35477D;
 }
 
-.date {
-    font-weight: 300;
-}
-
+.date,
 .location {
     font-weight: 300;
->>>>>>> master
 }
