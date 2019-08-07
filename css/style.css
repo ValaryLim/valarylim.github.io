@@ -298,3 +298,39 @@ body {
     position: fixed;
     top: 0;
 }
+
+.jobSkill, 
+.activitySkill {
+    margin-right: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: auto;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 1.33333em;
+    padding: 7px 18px;
+    margin-top: 0.8em;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.jobSkill {
+    border: 1px solid #C6CFFF;
+}
+
+.activitySkill {
+    border: 1px solid #35477D;
+}
+
+.jobIcon,
+.activityIcon {
+    width: 100%;
+}
+
+.jobCompany,
+.activityPosition {
+    font-style: italic;
+}
