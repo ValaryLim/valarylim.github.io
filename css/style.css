@@ -336,7 +336,8 @@ body {
 }
 
 .courseworkList,
-.eduList {
+.eduList,
+.activityList {
     list-style-type: circle;
 }
 
