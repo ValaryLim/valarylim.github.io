@@ -121,7 +121,7 @@ body {
 
 .social-icon:hover {
     margin: 10px;
-    color: #C6CFFF;
+    color: #fff;
 }
 
 .filter {
@@ -297,6 +297,7 @@ body {
 .jobSkill, 
 .activitySkill,
 .eduSkill {
+    color: #35477D;
     margin-right: 10px;
     text-transform: uppercase;
     font-weight: 500;
@@ -314,11 +315,11 @@ body {
 }
 
 .jobSkill,
-.eduSkill {
+.activitySkill {
     border: 1px solid #C6CFFF;
 }
 
-.activitySkill {
+.eduSkill {
     border: 1px solid #35477D;
 }
 
@@ -334,6 +335,25 @@ body {
     font-style: italic;
 }
 
-.courseworkList {
+.courseworkList,
+.eduList {
     list-style-type: circle;
+}
+
+.awardsList {
+    list-style: none;
+    margin-left: -20px;
+}
+
+.eduSubheader {
+    font-weight: bold;
+    color: #35477D;
+}
+
+.date {
+    font-weight: 300;
+}
+
+.location {
+    font-weight: 300;
 }
