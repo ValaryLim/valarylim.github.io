@@ -314,11 +314,11 @@ body {
 }
 
 .jobSkill,
-.eduSkill {
+.activitySkill {
     border: 1px solid #C6CFFF;
 }
 
-.activitySkill {
+.eduSkill {
     border: 1px solid #35477D;
 }
 
