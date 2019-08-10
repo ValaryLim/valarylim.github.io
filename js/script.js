@@ -15,44 +15,6 @@ $(document).ready(function(){
         showCursor: false
     });
 
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        items: 4,
-        responsive:{
-            0:{
-                items:1
-            },
-            480:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            938:{
-                items:4
-            }
-        }
-    });
-
-    var skillsTopOffset = $('.skillsSection').offset().top;
-    $(window).scroll(function() {
-        // Animate as soon as charts get into view
-        if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
-            $('.chart').easyPieChart({
-                easing: 'easeInOut',
-                barColor: '#35477D',
-                trackColor: '#fff',
-                lineWidth: 15,
-                size: 152,
-                scaleColor: false,
-                lineCap: 'round',
-                onStep: function(from, to, percent) {
-                    $(this.el).find('.percent').text(Math.round(percent));
-                }
-            });
-        }
-    });
-
     $('[data-fancybox]').fancybox();
 
     $('.items').isotope({
@@ -107,4 +69,33 @@ $(document).ready(function(){
             body.removeClass('fixedNav');
         }
     }
+
+    $('.skillbar').skillBars({
+        // number start
+        from: 0,       
+      
+        // number end 
+        to: false,      
+      
+        // animation speed
+        speed: 1000,   
+      
+        // how often the element should be up<a href="https://www.jqueryscript.net/time-clock/">date</a>d
+        interval: 100,    
+      
+        // the number of decimal places to show
+        decimals: 0,      
+      
+        // callback method for every time the element is updated,
+        onUpdate: null,   
+      
+        // callback method for when the element finishes updating
+        onComplete: null,   
+      
+        // CSS classes
+        classes:{
+          skillBarBar : '.skillbar-bar',
+          skillBarPercent : '.skill-bar-percent',
+        }
+    });
 });
