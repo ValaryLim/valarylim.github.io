@@ -342,11 +342,6 @@ body {
     list-style-type: circle;
 }
 
-.awardsList {
-    list-style: none;
-    margin-left: -20px;
-}
-
 .eduSubheader {
     font-weight: bold;
     color: #35477D;
@@ -355,4 +350,14 @@ body {
 .date,
 .location {
     font-weight: 300;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 0 15px;
+    text-align: left;
+    vertical-align: top;
 }
