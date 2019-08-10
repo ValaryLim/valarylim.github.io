@@ -335,15 +335,11 @@ body {
     font-style: italic;
 }
 
+.jobList,
 .courseworkList,
 .eduList,
 .activityList {
     list-style-type: circle;
-}
-
-.awardsList {
-    list-style: none;
-    margin-left: -20px;
 }
 
 .eduSubheader {
@@ -351,10 +347,17 @@ body {
     color: #35477D;
 }
 
-.date {
+.date,
+.location {
     font-weight: 300;
 }
 
-.location {
-    font-weight: 300;
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 0 15px;
+    text-align: left;
+    vertical-align: top;
 }
