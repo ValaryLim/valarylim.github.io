@@ -65,7 +65,7 @@ body {
     padding: 100px 0;
 }
 
-.aboutImage {
+#aboutImage {
     max-width: 100%;
 }
 
@@ -375,4 +375,29 @@ th, td {
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4);
 }
-  
+
+#downloadButton {
+    background-color: #DEECFF;
+    color: #35477D;
+    border: 2px solid #35477D;
+    text-align: center;
+    padding: 14px 28px;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+}
+
+#downloadButton:hover {
+    background-color: #35477D;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    img#aboutImage,
+    img.jobIcon,
+    img.eduIcon,
+    h6.location,
+    img.activityIcon {
+        display: none;
+    }
+}
