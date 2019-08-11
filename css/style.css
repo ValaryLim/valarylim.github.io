@@ -76,36 +76,6 @@ body {
     background-color: #DEECFF;
 }
 
-.skill {
-    text-align: center;
-    margin-left: 10px;
-}
-
-.chart {
-    position: relative;
-    width: 152px;
-    height: 152px;
-    display: inline-block;
-    text-align: center;
-}
-
-.chart canvas {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
-
-.chart .percent {
-    color: '#000';
-    line-height: 152px;
-    display: inline-block;
-    font-size: 25px;
-}
-
-.chart .percent:after {
-    content: '%';
-}
-
 .skill-title {
     margin-top: 15px;
 }
@@ -361,3 +331,48 @@ th, td {
     text-align: left;
     vertical-align: top;
 }
+
+.skillbar {
+    position: relative;
+    display: inline-block;
+    margin: 15px 0;
+    background: #eee;
+    height: 35px;
+    border-radius: 3px;
+    width: 90%;
+}
+  
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
+    height: 35px;
+    line-height: 35px;
+}
+  
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    border-radius: 3px;
+    display: inline-block;
+}
+  
+.skill-bar-percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    color: #ffffff;
+    color: rgba(0, 0, 0, 0.4);
+}
+  
