@@ -7,21 +7,13 @@ body {
 
 .overlay {
     width: 100%;
-<<<<<<< HEAD
     height: 115%;
-=======
-    height: 110%;
->>>>>>> origin/master
     position: absolute;
     z-index: 3;
     background-color: rgba(0,0,0,0.4);
 }
 
-<<<<<<< HEAD
-.slides-container img {
-=======
 #introImg {
->>>>>>> origin/master
     width: 100%;
 }
 
