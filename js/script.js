@@ -1,15 +1,8 @@
 $(document).ready(function(){
     // Execute when document is ready
-    $('#slides').superslides({
-        animation: 'fade',
-        // Change image every 10 seconds
-        play: 10000,
-        pagination: false
-    });
-
     var typed = new Typed('.typed', {
-        strings: ["Business Analyst", "Student"],
-        typeSpeed: 100,
+        strings: ["Business Analyst.", "Student."],
+        typeSpeed: 125,
         loop: true,
         startDelay: 1000,
         showCursor: false
