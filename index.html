@@ -19,7 +19,8 @@
     <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <!-- lato: body -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
-
+    <!-- inconsolata: code -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navigation" class="shadow-sm navbar navbar-expand-lg">
@@ -56,36 +57,76 @@
         </div>
     </nav>
 
-    <div id="about" class="aboutSection section">
+    <div>
+        <img id = "headerImage" src="images/header.png">
+    </div>
+    
+
+    <div id="about" class="aboutSection section">  
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img id="aboutImage" src="images/aboutme.jpg">
-                </div>
-                <div class="col-md-9">
-                    <h5>Hi, I'm Valary!</h5>
-                    <p>
-                        I'm a Year 2 undergraduate student studying a double major in Business Analytics and Economics at 
-                        the National University of Singapore. 
-                    </p>
-                    <p>
-                        I am looking to broaden my experiences and capabilities particularly in the field of data analytics
-                        (with a special interest in financial analytics), machine learning and behavioural economics.
-                    </p>
-                    <p> 
-                        In my free time, I enjoy playing board games, listening to rock/alternative music and baking.
-                    </p>
-                    <div>
-                        <a href="./files/Resume_Valary Lim Wan Qian.pdf" download="Resume_Valary Lim Wan Qian.pdf">
-                            <button id="downloadButton">Resume</button>
-                        </a>
+            <div class = "row">
+                <!-- Code -->
+                <div id = "code">
+                    <div id = "console">
+                        {
+                        <br/>
+                        <span class = "jsonDetails">
+                            "name": "Valary Lim Wan Qian",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "education": "National University of Singapore",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "degree": "BSc. Business Analytics (Computing) with Economics",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "specialisation": "Financial Analytics",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "expectedGraduation": "May 2022",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "knownLanguages": ["Python", "R", "Java"],
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "interests": ["Board Games", "Paramore", "Baking"],
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "resume": "
+                            <a href="./files/Resume_Valary Lim Wan Qian.pdf" download="valarylim_resume.pdf">
+                                valarylim_resume.pdf
+                            </a>",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "github": "
+                            <a href="https://github.com/ValaryLim">
+                                https://github.com/valarylim
+                            </a>",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "email": "
+                            <a href="mailto:valarylim@u.nus.edu">
+                                valarylim@u.nus.edu
+                            </a>"
+                        </span>
+                        <br/>
+                        }
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="experience" class="experienceSection section">
+    <!-- <div id="experience" class="experienceSection section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -195,7 +236,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div id="skills" class="skillsSection section">
         <div class="container">
@@ -312,7 +353,7 @@
         </div>
     </div>
 
-    <div id="portfolio" class="portfolioSection section">
+    <!-- <div id="portfolio" class="portfolioSection section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -404,9 +445,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="education" class="educationSection section">
+    <!-- <div id="education" class="educationSection section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -476,9 +517,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="extracurricular" class="extracurricularSection section">
+    <!-- <div id="extracurricular" class="extracurricularSection section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -571,9 +612,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="contact" class="contactSection section">
+    <!-- <div id="contact" class="contactSection section">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
@@ -589,7 +630,7 @@
                 </div>                
             </div>
         </div>
-    </div>
+    </div> -->
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"

@@ -27,8 +27,9 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* NAVIGATION SETTINGS */
 #navigation {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 16px 20px;
     z-index: 100;
     width: 100%;
@@ -37,6 +38,15 @@ body {
     text-transform: uppercase;
 }
 
+/* valarylim brand name */
+.navbar-brand, 
+.navbar-brand:hover {
+    color: #333333;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+/* navigation links */
 #navigation li {
     padding: 0 20px;
 }
@@ -49,36 +59,59 @@ body {
     color: #4A6FA5;
 }
 
-.navbar-brand, 
-.navbar-brand:hover {
-    color: #333333;
-    padding: 0 20px;
-    font-size: 16px;
-}
-
-.navbar-toggler-icon {
-    color: #35477D;
-}
-
+/* fix navigation to the top of page */
 .fixedNav #navigation {
     position: fixed;
     top: 0;
 }
 
+/* HEADER */
+img#headerImage {
+    width: 100%;
+}
+
+/* SECTIONS (GENERAL) */
 .section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
-#aboutImage {
-    max-width: 100%;
+/* SECTIONS - ABOUT */
+.aboutSection {
+    background-color: #4A6FA5;
+    padding: 70px;
 }
 
-.aboutSection,
-.skillsSection,
-.contactSection,
-.educationSection  {
-    background-color: #B5CAE2;
+#code {
+    border-radius: 5px;
+    width:700px;
+    margin: 0 auto;
+    padding-top:15px;
+    font-size:30px;
+    background: #ccc;
+    height: 350px;
+    text-align: left;
+    font-family: 'Inconsolata', monospace;
+    font-size:13px;
+    color: #fafafa;
+ }
+    
+#console {
+    width: 700px;
+    padding: 60px 80px;
+    height: 350px;
+    margin: 0 auto;
+    background: #383737;
 }
+
+.jsonDetails {
+    padding-left: 40px;
+}
+
+.jsonDetails a {
+    color: #2A9DF4
+}
+
+
 
 .skill-title {
     margin-top: 15px;
