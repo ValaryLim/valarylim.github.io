@@ -19,7 +19,7 @@ html {
 }
 
 body {
-    font-size: 14px;
+    font-size: 13px;
     color: #333333;
     font-family: 'Lato', sans-serif;
     letter-spacing: 1px;
@@ -88,8 +88,20 @@ img#headerImage {
     font-family: 'Karla', sans-serif;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
+}
+
+.sectionTagline {
+    text-align: left;
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    padding-bottom: 10px;
+    margin: 20px 0 10px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 
 /* SECTIONS - ABOUT */
@@ -131,7 +143,9 @@ img#headerImage {
 }
 
 /* SECTIONS - RESUME */
-
+.resumeSection {
+    margin: 20px 200px;
+}
 
 /* SECTIONS - CONTACT */
 .contactSection {
