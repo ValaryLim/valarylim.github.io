@@ -46,11 +46,20 @@ body {
     font-size: 16px;
 }
 
+
 /* navigation links */
 #navigation li {
     padding: 0 20px;
 }
 
+/* center navigation links */
+@media (min-width: 1000px) {
+    .navbar-nav {
+        margin-left: 20%;
+    }
+}
+
+/* set colour for links */
 .nav-link {
     color: #4C5364;
 }
@@ -75,6 +84,14 @@ img#headerImage {
     padding: 50px 0;
 }
 
+.sectionTitle {
+    font-family: 'Karla', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+}
+
 /* SECTIONS - ABOUT */
 .aboutSection {
     background-color: #4A6FA5;
@@ -84,20 +101,20 @@ img#headerImage {
 /* console */
 #code {
     border-radius: 5px;
-    width:700px;
+    width:750px;
     margin: 0 auto;
-    padding-top:15px;
-    font-size:30px;
+    padding-top: 15px;
+    font-size: 30px;
     background: #ccc;
     height: 380px;
     text-align: left;
     font-family: 'Inconsolata', monospace;
-    font-size:13px;
+    font-size: 14px;
     color: #fafafa;
  }
     
 #console {
-    width: 700px;
+    width: 750px;
     padding: 60px 80px;
     height: 380px;
     margin: 0 auto;
@@ -112,6 +129,9 @@ img#headerImage {
 .jsonDetails a {
     color: #2A9DF4
 }
+
+/* SECTIONS - RESUME */
+
 
 /* SECTIONS - CONTACT */
 .contactSection {
