@@ -81,6 +81,7 @@ img#headerImage {
     padding: 70px;
 }
 
+/* console */
 #code {
     border-radius: 5px;
     width:700px;
@@ -104,12 +105,14 @@ img#headerImage {
 }
 
 .jsonDetails {
+    /* indentation for json code */
     padding-left: 40px;
 }
 
 .jsonDetails a {
     color: #2A9DF4
 }
+
 
 
 
@@ -395,7 +398,6 @@ th, td {
 }
 
 @media (max-width: 800px) {
-    img#aboutImage,
     img.jobIcon,
     img.eduIcon,
     h6.location,
