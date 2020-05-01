@@ -70,7 +70,7 @@ img#headerImage {
     width: 100%;
 }
 
-/* SECTIONS (GENERAL) */
+/* SECTIONS - GENERAL */
 .section {
     padding: 50px 0;
 }
@@ -89,7 +89,7 @@ img#headerImage {
     padding-top:15px;
     font-size:30px;
     background: #ccc;
-    height: 350px;
+    height: 380px;
     text-align: left;
     font-family: 'Inconsolata', monospace;
     font-size:13px;
@@ -99,7 +99,7 @@ img#headerImage {
 #console {
     width: 700px;
     padding: 60px 80px;
-    height: 350px;
+    height: 380px;
     margin: 0 auto;
     background: #383737;
 }
@@ -113,25 +113,19 @@ img#headerImage {
     color: #2A9DF4
 }
 
+/* SECTIONS - CONTACT */
+.contactSection {
+    background-color: #4A6FA5;
+    color: white;
+}
 
+.contactLink, .contactLink:hover {
+    color: white;
+}
 
 
 .skill-title {
     margin-top: 15px;
-}
-
-.social-links {
-    font-size: 40px;
-}
-
-.social-icon {
-    margin: 10px;
-    color: #485C82
-}
-
-.social-icon:hover {
-    margin: 10px;
-    color: #fff;
 }
 
 .filter {
@@ -379,22 +373,6 @@ th, td {
     line-height: 35px;
     color: #ffffff;
     color: rgba(0, 0, 0, 0.4);
-}
-
-#downloadButton {
-    background-color: #4A6FA5;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 28px;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 12px;
-    width: 40%;
-}
-
-#downloadButton:hover {
-    font-weight: bold;
-    border: 2px;
 }
 
 @media (max-width: 800px) {
