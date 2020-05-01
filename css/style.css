@@ -143,10 +143,17 @@ img#headerImage {
 }
 
 /* SECTIONS - RESUME */
-.resumeSection {
-    margin: 20px 200px;
+@media (min-width: 800px) {
+    .resumeSection {
+        margin: 20px 200px;
+    }
 }
 
+@media (max-width: 800px) {
+    .resumeSection {
+        margin: 20px 100px;
+    }
+}
 /* SECTIONS - CONTACT */
 .contactSection {
     background-color: #4A6FA5;
@@ -326,11 +333,20 @@ img#headerImage {
     border: 1px solid #4A6FA5;
 }
 
-.jobIcon,
-.activityIcon,
-.eduIcon {
+img.resumeIcon {
     width: 100%;
-}
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    float: left;
+    display: block;
+    margin-top: 5px;
+    opacity: 0.8;
+    z-index: 0;
+  }
 
 .jobCompany,
 .activityPosition,
@@ -410,6 +426,7 @@ th, td {
 }
 
 @media (max-width: 800px) {
+    img.resumeIcon,
     img.jobIcon,
     img.eduIcon,
     h6.location,
