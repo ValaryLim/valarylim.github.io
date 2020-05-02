@@ -2,12 +2,25 @@
 <html>
 <head>
     <title>Valary Lim</title>
+    <meta name="keywords" content="valary lim"/>
+    <meta name="author" content="Valary Lim"/>
+
     <link rel="stylesheet" type="text/css" href="css/superslides.css">
     <link rel="stylesheet" type="text/css" href="css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- font styles --> 
+    <!-- karla: navigation, headers -->
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <!-- lato: body -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- inconsolata: code -->
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:300,400,500,600,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav id="navigation" class="shadow-sm navbar navbar-expand-lg">
@@ -19,403 +32,156 @@
 
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#resume">Resume</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#portfolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#extracurricular">Extracurricular</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blog">Blog</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div id="about" class="aboutSection section">
+    <div>
+        <img id = "headerImage" src="images/header.png">
+    </div>
+    
+    <div id="about" class="aboutSection section">  
         <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img id="aboutImage" src="images/aboutme.jpg">
+            <div class = "row">
+                <!-- Code -->
+                <div id = "code">
+                    <div id = "console">
+                        {
+                        <br/>
+                        <span class = "jsonDetails">
+                            "name": "Valary Lim Wan Qian",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "education": "National University of Singapore",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "degree": "BSc. Business Analytics (Computing) with Economics",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "specialisation": "Financial Analytics",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "expectedGraduation": "May 2022",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "knownLanguages": ["Python", "R", "Java", "mySQL", "Javascript"],
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "interests": ["Board Games", "Paramore", "Baking"],
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "resume": "
+                            <a href="./files/Resume_Valary Lim Wan Qian.pdf" download="valarylim_resume.pdf">
+                                valarylim_resume.pdf
+                            </a>",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "github": "
+                            <a href="https://github.com/ValaryLim">
+                                https://github.com/valarylim
+                            </a>",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "linkedin": "
+                            <a href="https://www.linkedin.com/in/valarylim">
+                                https://www.linkedin.com/in/valarylim
+                            </a>",
+                        </span>
+                        <br/>
+                        <span class = "jsonDetails">
+                            "email": "
+                            <a href="mailto:valarylim@u.nus.edu">
+                                valarylim@u.nus.edu
+                            </a>"
+                        </span>
+                        <br/>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUME -->
+    <div id="resume" class="resumeSection section">
+        <p class="sectionTitle">Resume</p>
+        <!-- EDUCATION -->
+        <p class="sectionTagline">Education</p>
+        <div class="container">
+            <!-- nus -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/education/logo_nus.png"/>
                 </div>
                 <div class="col-md-9">
-                    <h5>Hi, I'm Valary!</h5>
-                    <p>
-                        I'm a Year 2 undergraduate student studying a double major in Business Analytics and Economics at 
-                        the National University of Singapore. 
-                    </p>
-                    <p>
-                        I am looking to broaden my experiences and capabilities particularly in the field of data analytics
-                        (with a special interest in financial analytics), machine learning and behavioural economics.
-                    </p>
-                    <p> 
-                        In my free time, I enjoy playing board games, listening to rock/alternative music and baking.
-                    </p>
-                    <div>
-                        <a href="./files/Resume_Valary Lim Wan Qian.pdf" download="Resume_Valary Lim Wan Qian.pdf">
-                            <button id="downloadButton">Resume</button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="experience" class="experienceSection section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Work Experience</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="jobIcon" src="images/experience/logo_nus.png"/>
-                </div>
-                <div class="jobText col-md-8">
-                    <h5 class="jobTitle">Teaching Assistant</h5>
-                    <h6 class="jobCompany">National University of Singapore (NUS)</h6>
-                    <ul class="jobList">
-                        <li>Serving as a Teaching Assistant for CS1010S: Programming Methodology I to 
-                            <b>conduct tutorial sessions</b> for about 25 students, 
-                            <b>grade assignments</b> and <b>provide consultations</b></li>
-                    </ul>
-                    <div>
-                        <span class="jobSkill">Python</span>
-                    </div>
-                    <br>
-                </div>
-                <div class="jobDateLoc col-md-3">
-                    <h6 class="date">Aug 19 - Present</h6>
-                    <h6 class="location">Singapore</h6>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="jobIcon" src="images/experience/logo_iras.png"/>
-                </div>
-                <div class="jobText col-md-8">
-                    <h5 class="jobTitle">Business Analytics Intern</h5>
-                    <h6 class="jobCompany">Inland Revenue Authority of Singapore (IRAS)</h6>
-                    <h6 class="jobCompany">Corporate Strategy and Insights Division (CSID)</h6>
-                    <ul class="jobList">
-                        <li>Built a <b>deep learning text classifier application using Tensorflow, Keras and R Shiny</b> to categorise emails into different categories and direct them to relevant tax officers</li>
-                        <li><b>Researched, tested and evaluated various automated machine learning softwares</b> (DataRobot, H2O Driverless AI, etc.) for adoption by IRAS</li>
-                        <li>Performed python package evaluation for <b>automated machine learning packages auto-sklearn and TPOT</b>, as well as <b>feature engineering package Featuretools</b></li>
-                        <li>Collated the SVY21 coordinates of malls in Singapore for machine learning projects by building a web scraper and parsing the retrieved data through the One Map API</li>
-                        <li>Prepped and tested data for an internal hackathon organised by CSID</li>
-                        <li>Designed the Analytics Communication Series, a series of infographics within IRAS to enhance data literacy of tax officers</li>
-                    </ul>
-                    <div>
-                        <span class="jobSkill">Python</span>
-                        <span class="jobSkill">R</span>
-                        <span class="jobSkill">NLP</span>
-                        <span class="jobSkill">DataRobot</span>
-                        <span class="jobSkill">H2O Driverless AI</span>
-                        <span class="jobSkill">Power BI</span>
-                        <span class="jobSkill">Excel</span>
-                    </div>
-                    <br>
-                </div>
-                <div class="jobDateLoc col-md-3">
-                    <h6 class="date">May 19 - Aug 19</h6>
-                    <h6 class="location">Singapore</h6>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="jobIcon" src="images/experience/logo_iras.png"/>
-                </div>
-                <div class="jobText col-md-8">
-                    <h5 class="jobTitle">Business Analytics Intern</h5>
-                    <h6 class="jobCompany">Inland Revenue Authority of Singapore</h6> 
-                    <h6 class="jobCompany">Property Tax Department - Data Analytics Research Team</h6>
-                    <ul class="jobList">
-                        <li>Performed <b>hedonic regression analysis in R</b> to predict the valuation of shopping malls in Singapore</li>
-                        <li>Optimised performance checking for Property Tax Department managers by <b>creating interactive dashboards on PowerBI</b> for various teams</li>
-                    </ul>
-                    <div>
-                        <span class="jobSkill">R</span>
-                        <span class="jobSkill">Power BI</span>
-                    </div>
-                    <br>
-                </div>
-                <div class="jobDateLoc col-md-3">
-                    <h6 class="date">Dec 19</h6>
-                    <h6 class="location">Singapore</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="skills" class="skillsSection section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Technical Skills</h2>
-                    <p>A representation of my proficiency in each skill.</p>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 text-center">
-                    <h5>Software</h5>
-                    <div class="skillbar" data-percent="95">
-                        <span class="skillbar-title" style="background: #2980B9;">Tableau</span>
-                        <p class="skillbar-bar" style="background: #4A9FF5;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar --> 
-                    <div class="skillbar" data-percent="70">
-                        <span class="skillbar-title" style="background: #FF9668;">PowerBI</span>
-                        <p class="skillbar-bar" style="background: #FFB677;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="75">
-                        <span class="skillbar-title" style="background: #E16262;">SAS EG</span>
-                        <p class="skillbar-bar" style="background: #F17E7E;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar --> 
-                    <div class="skillbar" data-percent="95">
-                        <span class="skillbar-title" style="background: #45969B;">Excel</span>
-                        <p class="skillbar-bar" style="background: #8BBABB;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="65">
-                        <span class="skillbar-title" style="background: #6C5CE7;">MATLAB</span>
-                        <p class="skillbar-bar" style="background: #7B88FF;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                </div>
-                <!-- End Skill Section -->
-                <div class="col-md-6 col-lg-4 text-center">
-                    <h5>Languages/Frameworks</h5>
-                    <div class="skillbar" data-percent="90">
-                        <span class="skillbar-title" style="background: #E16262;">Python</span>
-                        <p class="skillbar-bar" style="background: #F17E7E;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->  
-                    <div class="skillbar" data-percent="90">
-                        <span class="skillbar-title" style="background: #1D97C1;">R</span>
-                        <p class="skillbar-bar" style="background: #8AC6D1;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar --> 
-                    <div class="skillbar" data-percent="85">
-                        <span class="skillbar-title" style="background: #FF9668;">mySQL</span>
-                        <p class="skillbar-bar" style="background: #FFB677;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="70">
-                        <span class="skillbar-title" style="background: #6C5CE7;">Java</span>
-                        <p class="skillbar-bar" style="background: #7B88FF;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="80">
-                        <span class="skillbar-title" style="background: #2980B9;">HTML</span>
-                        <p class="skillbar-bar" style="background: #4A9FF5;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar --> 
-                    <div class="skillbar" data-percent="80">
-                        <span class="skillbar-title" style="background: #E16262;">CSS</span>
-                        <p class="skillbar-bar" style="background: #F17E7E;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar --> 
-                    <div class="skillbar" data-percent="55">
-                        <span class="skillbar-title" style="background: #6C5CE7;">Javascript</span>
-                        <p class="skillbar-bar" style="background: #7B88FF;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="55">
-                        <span class="skillbar-title" style="background: #45969B;">React-Native</span>
-                        <p class="skillbar-bar" style="background: #8BBABB;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                </div>
-                <!-- End Skill Section -->
-                <div class="col-md-6 col-lg-4 text-center">
-                    <h5>Tools</h5>
-                    <div class="skillbar" data-percent="80">
-                        <span class="skillbar-title" style="background: #6C5CE7;">Git</span>
-                        <p class="skillbar-bar" style="background: #7B88FF;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                    <div class="skillbar" data-percent="80">
-                        <span class="skillbar-title" style="background: #45969B;">Github</span>
-                        <p class="skillbar-bar" style="background: #8BBABB;"></p>
-                        <span class="skill-bar-percent"></span>
-                    </div>
-                    <!-- End Skill Bar -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="portfolio" class="portfolioSection section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Portfolio</h2>
-                </div>   
-
-                <div class="filter">
-                    <ul id="filters">
-                        <li><a href="#" data-filter="*" class="current">All</a></li>
-                        <li><a href="#" data-filter=".apps">Applications</a></li>
-                        <li><a href="#" data-filter=".ml">Machine Learning</a></li>
-                        <li><a href="#" data-filter=".viz">Visualisations</a></li>
-                    </ul>
-                </div> 
-                
-                <div class="itemsContainer">
-                    <ul class="items">
-                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/icon/apps_alpacash.jpg"/>
-                                <div class="portfolio-icons">
-                                    <a href="images/portfolio/detailed/apps_alpacash.png" title="View image" class="openButton" data-fancybox data-caption="Alpacash - A gamified financial tracker developed under CP2106: Independent Software Learning Project (Orbital)">
-                                        <i class="pi fa fa-search"></i>
-                                    </a>
-                                    <a href="https://github.com/ValaryLim/Alpacash" target="_blank" class="projectLink">
-                                        <i class="pi fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-                        <li onclick="" class="ml col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/icon/ml_ndsc2019.jpg"/>
-                                <div class="portfolio-icons">
-                                    <a href="images/portfolio/detailed/ml_ndsc2019.png" title="View image" class="openButton" data-fancybox data-caption="Item classifier for Shopee's National Data Science Challenge 2019">
-                                        <i class="pi fa fa-search"></i>
-                                    </a>
-                                    <a href="https://github.com/ValaryLim/National-Data-Science-Challenge-2019" target="_blank" class="projectLink">
-                                        <i class="pi fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-                        <li onclick="" class="viz col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/icon/viz_healthcare.png"/>
-                                <div class="portfolio-icons">
-                                    <a href="images/portfolio/detailed/viz_healthcare.png" title="View image" class="openButton" data-fancybox data-caption="Dashboard redesign to explore healthcare cost of various diseases.">
-                                        <i class="pi fa fa-search"></i>
-                                    </a>
-                                    <a href="https://public.tableau.com/views/01-TestRun-DashboardRedesign_15654169420280/ExploringHealthcareCostsandPatientNumbers?:embed=y&:display_count=yes&:origin=viz_share_link" target="_blank" class="projectLink">
-                                        <i class="pi fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-                        <li onclick="" class="viz col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/icon/viz_shipmentdelay.png"/>
-                                <div class="portfolio-icons">
-                                    <a href="images/portfolio/detailed/viz_shipmentdelay.png" title="View image" class="openButton" data-fancybox data-caption="Interactive dashboard to explore various shipment delays.">
-                                        <i class="pi fa fa-search"></i>
-                                    </a>
-                                    <a href="https://public.tableau.com/shared/4N3N8ZZDF?:display_count=yes&:origin=viz_share_link" target="_blank" class="projectLink">
-                                        <i class="pi fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-                        <li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-                            <div class="item">
-                                <img src="images/portfolio/icon/apps_mallwebscraper.png"/>
-                                <div class="portfolio-icons">
-                                    <a href="images/portfolio/detailed/apps_mallwebscraper.png" title="View image" class="openButton" data-fancybox data-caption="Jupyter Notebook to retrieve SVY21 coordinates of malls in Singapore">
-                                        <i class="pi fa fa-search"></i>
-                                    </a>
-                                    <a href="https://github.com/ValaryLim/Mall-Coordinates-Web-Scraper" target="_blank" class="projectLink">
-                                        <i class="pi fa fa-link"></i>
-                                    </a>
-                                </div>
-                                <div class="imageOverlay"></div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="education" class="educationSection section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Education</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="eduIcon" src="images/education/logo_nus.png">
-                </div>
-                <div class="eduText col-md-8">
-                    <h5 class="eduSchool">National University of Singapore</h5>
-                    <h6 class="eduDegree">School of Computing</h6>
-                    <h6 class="eduDegree">Bsc. in Business Analytics with Economics (Double Major)</h6>
-                    <ul class="eduList">
+                    <p class="resumeName">National University of Singapore</p>
+                    <p class="resumeDesc">School of Computing</p>
+                    <p class="resumeDesc">BSc. in Business Analytics with Economics (Double Major)</p>
+                    <ul class="resumeList">
                         <li>University Scholars Programme</li>
-                        <li>Cumulative GPA:<b> 4.71 / 5.00</b></li>
+                        <li>NUS Global Merit Scholar</li>
+                        <li>Cumulative GPA:<b> 4.79 / 5.00</b></li>
                         <li>Expected Graduation:<b> May 2022</b></li>
                     </ul>
                     <br>
-                    <h6 class="eduSubheader">Relevant Coursework</h6>
-                    <ul class="courseworkList">
+                    <p class="resumeSubheader">Relevant Coursework</p>
+                    <ul class="resumeList">
                         <li>Introduction to Business Analytics</li>
                         <li>Decision Making Methods and Tools</li>
+                        <li>Computational Methods for Business Analytics</li>
+                        <li>Prediction and Causal Identification</li>
+                        <li>Random Number Generation and Simulation</li>
+                        <li>Modelling, Optimisation and Estimation</li>
+                        <li>Pricing and Competition Decisions</li>
                         <li>Data Management and Visualisation</li>
+                        <li>Probability and Statistics</li>
+                        <li>Linear Algebra</li>
+                        <li>Calculus</li>
                         <li>Programming Methodology I & II</li>
                         <li>Data Structures and Algorithms</li>
+                        <li>Application Systems Development</li>
                         <li>Independent Software Development Project (Orbital)</li>
-                        <li>Linear Algebra</li>
-                        <li>Quantitative Reasoning</li>
+                        <li>Microeconomic & Macroeconomic Analysis</li>
                     </ul>
                     <div>
-                        <span class="eduSkill">Python</span>
-                        <span class="eduSkill">R</span>
-                        <span class="eduSkill">mySQL</span>
-                        <span class="eduSkill">Tableau</span>
-                        <span class="eduSkill">Java</span>
-                        <span class="eduSkill">React-Native</span>
+                        <span class="resumeSkill">Python</span>
+                        <span class="resumeSkill">R</span>
+                        <span class="resumeSkill">mySQL</span>
+                        <span class="resumeSkill">Java</span>
+                        <span class="resumeSkill">HTML</span>
+                        <span class="resumeSkill">CSS</span>
+                        <span class="resumeSkill">Javascript</span>
+                        <span class="resumeSkill">Tableau</span>
+                        <span class="resumeSkill">React-Native</span>
+                        <span class="resumeSkill">Git</span>
                     </div>
                     <br>
                     <br>
-                    <h6 class = "eduSubheader">Awards & Achievements</h6>
+                    <p class = "resumeSubheader">Awards & Achievements</p>
                     <table>
                         <tr>
                             <th>Year</th>
@@ -423,11 +189,19 @@
                         </tr>
                         <tr>
                             <td>2019</td>
-                            <td>Apollo 11 (Difficult/Advanced) in CP2106: Independent Software Development Project (Orbital)</td> 
+                            <td>Deans List (AY19/20 S1)</td>
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Top 1/140 in CS2040 Data Structures and Algorithms</td>
                         </tr>
                         <tr>
                             <td>2019</td>
                             <td>Top 10/144 in BT2102: Data Management and Visualisation</td> 
+                        </tr>
+                        <tr>
+                            <td>2019</td>
+                            <td>Apollo 11 (Difficult/Advanced) in CP2106: Independent Software Development Project (Orbital)</td> 
                         </tr>
                         <tr>
                             <td>2018</td>
@@ -436,103 +210,344 @@
                     </table>
                     <br>
                 </div>
-                <div class="eduDateLoc col-md-3">
-                    <h6 class="date">Aug 18 - Present</h6>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Aug 18 - Present</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- ku -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/education/logo_ku.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">Korea University</p>
+                    <p class="resumeDesc">International Winter Campus</p>
+                    <p>	
+                        Participated in an academic and cultural immersion programme at Korea University's 
+                        winter campus. Learnt core marketing principles and applied these principles to draft 
+                        a marketing plan to introduce a new product to the South Korean market.
+                    </p>
+                    <br>
+                    <p class="resumeSubheader">Relevant Coursework</p>
+                    <ul class="resumeList">
+                        <li>Introduction to Marketing</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Dec 19 - Jan 20</p>
+                    <p class="resumeDateLoc">South Korea</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <p class="sectionTagline">Work Experience</p>
+        <div class="container">
+            <!-- gic -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/experience/logo_gic.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">GIC Private Limited</p>
+                    <p class="resumeRole">Incoming Data Science Intern</p>
+                    <!-- <p class="resumeDesc">Corporate Strategy and Insights Division</p>
+                    <ul class="resumeList">
+                        <li>insert jobscope here</li>
+                        <li>insert jobscope here</li>
+                        <li>insert jobscope here</li>
+                        <li>insert jobscope here</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Python</span>
+                        <span class="resumeSkill">R</span>
+                        <span class="resumeSkill">mySQL</span>
+                    </div> -->
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">May 20 - Present</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- worldquant -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/experience/logo_worldquant.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">WorldQuant</p>
+                    <p class="resumeRole">Quantitative Research Intern (Returning in Aug 2020)</p>
+                    <ul class="resumeList">
+                        <li>Develop scripts to <b>visualise and evaluate alpha signal performance</b></li>
+                        <li>Collaborate with Quantitative Researchers and Portfolio Managers to <b>generate 
+                            alpha to predict movements of worldwide financial markets from news data</b></li>
+                        <li>Review and experiment ideas from academic finance literature</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Python</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Dec 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- teaching assistant -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/experience/logo_nus.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">National University of Singapore</p>
+                    <p class="resumeRole">Teaching Assistant for CS2040: Data Structures & Algorithms</p>
+                    <p class="resumeDesc">School of Computing</p>
+                    <ul class="resumeList">
+                        <li>Conduct <b>tutorial sessions and provide consultations</b> for a class of 24 students</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Java</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Jan 20 - May 20</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeRole">Teaching Assistant for CS1010S: Programming Methodology I</p>
+                    <p class="resumeDesc">School of Computing</p>
+                    <ul class="resumeList">
+                        <li>Conduct <b>tutorial sessions, grade assignments and practicals, and provide 
+                            consultations</b> for classes of 10-12 students</li>
+                        <li>Run simulations as Contest IC for 2048 Solver, a contest where students 
+                            create an automatic solver for the  
+                            <a class="resumeLink" href="https://play2048.co/">2048</a> game</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Python</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Aug 19 - May 20</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- iras -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/experience/logo_iras.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">Inland Revenue Authority of Singapore (IRAS)</p>
+                    <p class="resumeRole">Business Analytics Intern</p>
+                    <p class="resumeDesc">Corporate Strategy and Insights Division</p>
+                    <ul class="resumeList">
+                        <li>Built a <b>deep learning text classifier application using Tensorflow and Keras</b> to 
+                            categorise emails into different categories and direct them to relevant tax officers</li>
+                        <li><b>Researched, tested and evaluated various automated machine learning softwares</b> 
+                            (DataRobot, H2O Driverless AI, etc.) for adoption by IRAS</li>
+                        <li>Performed python package evaluation for <b>automated machine learning packages auto-sklearn 
+                            and TPOT</b>, as well as <b>feature engineering package Featuretools</b></li>
+                        <li>Built a web scraper to collate SVY21 coordinates of malls in Singapore</li>
+                        <li>Prepped and tested data for an internal hackathon organised by CSID</li>
+                        <li>Designed the Analytics Communication Series, a series of infographics within IRAS to 
+                            enhance data literacy of tax officers</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Python</span>
+                        <span class="resumeSkill">R</span>
+                        <span class="resumeSkill">Power BI</span>
+                        <span class="resumeSkill">NLP</span>
+                        <span class="resumeSkill">Web Scraping</span>
+                        <span class="resumeSkill">DataRobot</span>
+                        <span class="resumeSkill">H20 Driverless AI</span>
+                        
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <br>
+                    <br>
+                    <p class="resumeDateLoc">May 19 - Aug 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeRole">Business Analytics Intern</p>
+                    <p class="resumeDesc">Property Tax Department - Data Analytics Research Team (DART)</p>
+                    <ul class="resumeList">
+                        <li>Performed <b>hedonic regression analysis in R</b> to predict the 
+                            valuation of shopping malls in Singapore</li>
+                        <li>Optimised performance checking for Property Tax Department managers 
+                            by <b>creating interactive dashboards on PowerBI</b> for various teams</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">R</span>
+                        <span class="resumeSkill">Power BI</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Dec 19</br>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXTRACURRICULAR -->
+        <p class="sectionTagline">Extracurricular</p>
+        <div class="container">
+            <!-- fintech -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/extracurricular/logo_nusfintech.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">NUS Fintech Society</p>
+                    <p class="resumeRole">Member</p>
+                    <p class="resumeDesc">Machine Learning Team</p>
+                    <ul class="resumeList">
+                        <li>Attend weekly meetings, workshops and talks under the NUS Fintech Society 
+                            to enhance existing knowledge and skills on machine learning</li>
+                        <li>Work on machine learning projects with datasets from Kaggle</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Python</span>
+                        <span class="resumeSkill">R</span>
+                        <span class="resumeSkill">Git</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Jan 19 - Dec 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- usc fop -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/extracurricular/logo_uscfop.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">USC Freshmen Orientation Programme</p>
+                    <p class="resumeRole">Finance Director</p>
+                    <ul class="resumeList">
+                        <li>Heading a team to oversee budgeting and expenditure in all 5 events 
+                            under USC's Freshmen Orientation Programme</li>
+                        <li>Liaising with USP and NUS Administrative Staff and event directors to 
+                            set appropriate budgets for each event</li>
+                        <li>Streamlining the financial process by automating and syncing Excel Spreadsheets 
+                            that allow for minimal manual input</li>
+                        <li>Facilitating the reimbursement process</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Dec 18 - Sep 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- care data analytics -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/extracurricular/logo_caresg.png"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">CARE Singapore Data Analytics Project</p>
+                    <p class="resumeRole">Team Leader</p>
+                    <ul class="resumeList">
+                        <li>Led a team of 4 to generate insights based on data collected by CARE Singapore 
+                            to help improve their Uth Power! Programme</li>
+                        <li>Generated visualisations, posters and reports to help CARE staff better present 
+                            their findings to the government, their funders, and potential sponsors.</li>
+                    </ul>
+                    <div>
+                        <span class="resumeSkill">Tableau</span>
+                        <span class="resumeSkill">Excel</span>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Dec 18 - May 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
+                </div>
+            </div>
+            <!-- enactus -->
+            <div class="row resumeSubsection">
+                <div class="col-md-1">
+                    <img class="resumeIcon" src="images/extracurricular/logo_enactus.jpeg"/>
+                </div>
+                <div class="col-md-9">
+                    <p class="resumeName">NUS Enactus</p>
+                    <p class="resumeRole">Core Team Member</p>
+                    <p class="resumeDesc">Project Bridge</p>
+                    <ul class="resumeList">
+                        <li>Prototyped an online healthcare-specific dialect course catered to medical 
+                            practitioners and students, with the aim of bridging the language barrier 
+                            between elderly and healthcare practitioners in Singapore</li>
+                        <li>Liaise with external beneficiaries to develop core curriculum for online 
+                            course</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <p class="resumeDateLoc">Aug 18 - Jun 19</p>
+                    <p class="resumeDateLoc">Singapore</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="extracurricular" class="extracurricularSection section">
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="portfolioSection section">
+        <p class="sectionTitle">Portfolio</p>
         <div class="container">
+            <!-- Control buttons -->
             <div class="row">
-                <div class="col-md-12 text-center">
-                    <h2>Extracurricular</h2>
-                </div>                
+                <div id="filter" class="col-md-12 text-center">
+                    <button class="btn active" onclick="filterSelection('all')">All</button>
+                    <button class="btn" onclick="filterSelection('apps')">Applications</button>
+                    <button class="btn" onclick="filterSelection('ml')">Machine Learning</button>
+                    <button class="btn" onclick="filterSelection('viz')">Visualisations</button>
+                </div>              
             </div>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="activityIcon" src="images/extracurricular/logo_nusfintech.png"/>
-                </div>
-                <div class="activityText com-sm-12 col-md-8">
-                    <h5 class="activityTitle">NUS Fintech Society</h5>
-                    <h6 class="activityPosition">Machine Learning Team Member</h6>
-                    <ul class="activityList">
-                        <li>Attend weekly meetings, workshops and talks under the NUS Fintech Society to enhance existing knowledge and skills on machine learning</li>
-                        <li>Work on machine learning projects with datasets from Kaggle</li>
-                    </ul>
-                    <div>
-                        <span class="activitySkill">Python</span>
-                        <span class="activitySkill">R</span>
-                        <span class="activitySkill">Git</span>
+            
+            <div class="row justify-content-center itemsContainer">
+                <!-- vueplan -->
+                <div class="item">
+                    <div class="filterItem apps">
+                        <img class="filterItemImg" src="images/portfolio/vueplan.png">
+                        <p class="filterItemDesc"><a class="filterItemName">Vueplan </a> is a centralised 
+                            academic planning system built using Vue.js and Firebase.
+                            My contributions include the <b>Academic Planner feature (drag-and-drop, add/delete,
+                            prerequisite checks)</b> and the <b>Module Popularity Dashboard</b> under 
+                            Module Information.
+                            I also <b>designed and implemented the user interface</b> for the entire 
+                            web application.
+                        </p>
+                        <p class="filterItemDesc">Links: 
+                            <a class="filterItemLink" href="https://vueplan.firebaseapp.com/">App</a> | 
+                            <a class="filterItemLink" href="https://github.com/ValaryLim/Vueplan">Github</a>
+                        </p>
                     </div>
-                    <br>
                 </div>
-                <div class="activityDateLoc col-md-3">
-                    <h6 class="date">Feb 19 - Present</h6>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="activityIcon" src="images/extracurricular/logo_uscfop.png"/>
-                </div>
-                <div class="activityText com-sm-12 col-md-8">
-                    <h5 class="activityTitle">USC Freshmen Orientation Programme 2019</h5>
-                    <h6 class="activityPosition">Finance Director</h6>
-                    <ul class="activityList">
-                        <li>Heading a team to oversee budgeting and expenditure in all 5 events under USC's Freshmen Orientation Programme</li>
-                        <li>Liaising with USP and NUS Administrative Staff and event directors to set appropriate budgets for each event</li>
-                        <li>Streamlining the financial process by automating and syncing Excel Spreadsheets that allow for minimal manual input</li>
-                        <li>Facilitating the reimbursement process</li>
-                    </ul>
-                    <br>
-                </div>
-                <div class="activityDateLoc col-md-3">
-                    <h6 class="date">Dec 18 - Sep 19</h6>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="activityIcon" src="images/extracurricular/logo_caresg.png"/>
-                </div>
-                <div class="activityText com-sm-12 col-md-8">
-                    <h5 class="activityTitle">CARE Singapore Data Analytics Project</h5>
-                    <h6 class="activityPosition">Team Leader</h6>
-                    <ul class="activityList">
-                        <li>Led a team of 4 to generate insights based on data collected by CARE Singapore to help improve their Uth Power! Programme</li>
-                        <li>Generated visualisations, posters and reports to help CARE staff better present their findings to the government, their funders, and potential sponsors.</li>
-                    </ul>
-                    <div>
-                        <span class="activitySkill">Tableau</span>
-                        <span class="activitySkill">Excel</span>
+                
+                <!-- alpacash -->
+                <div class="item">
+                    <div class="filterItem apps">
+                        <img class="filterItemImg" src="images/portfolio/alpacash.png">
+                        <p class="filterItemDesc"><a class="filterItemName">Alpacash </a>is a gamified 
+                        financial tracker built using React-Native and Firebase as part of 
+                        <a class="filterItemLink" href="https://orbital.comp.nus.edu.sg/">CP2106: 
+                        Independent Software Learning Project (Orbital)</a>. 
+                        I contributed over 20,000 lines of code for the <b>budget, statistics and 
+                        settings segments</b> of the application and reviewed pull requests 
+                        made by my teammate.
+                        This project attained the Apollo 11 award. 
+                        </p>
+                        <p class="filterItemDesc"><a class="filterItemLink" href="https://github.com/ValaryLim/Alpacash">Github</a></p>
                     </div>
-                    <br>
-                </div>
-                <div class="activityDateLoc col-md-3">
-                    <h6 class="date">Dec 18 - May 19</h6>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-md-1">
-                    <img class="activityIcon" src="images/extracurricular/logo_enactus.jpeg"/>
-                </div>
-                <div class="activityText com-sm-12 col-md-8">
-                    <h5 class="activityTitle">NUS Enactus: Project Bridge</h5>
-                    <h6 class="activityPosition">Core Team Member</h6>
-                    <ul class="activityList">
-                        <li>Prototyped an online healthcare-specific dialect course catered to medical practitioners and students, with the aim of bridging the language barrier between elderly and healthcare practitioners in Singapore</li>
-                        <li>Liaise with external beneficiaries to develop core curriculum for online course</li>
-                    </ul>
-                    <br>
-                </div>
-                <div class="activityDateLoc col-md-3">
-                    <h6 class="date">Aug 18 - June 19</h6>
                 </div>
             </div>
         </div>
@@ -542,16 +557,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>Get in Touch</h2>
-                    <p>Feel free to connect with me on one of my socials or drop me an email at <u>valarylim@u.nus.edu</u>.</p>
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/valarylim" class="social-icon"><i class="fab fa-linkedin"></i></i></a>
-                        <a href="https://github.com/ValaryLim" class="social-icon"><i class="fab fa-github"></i></a>
-                        <a href="mailto:valarylim@u.nus.edu" class="social-icon"><i class="fas fa-envelope"></i></a>
-                        <a href="tel:+6596520809" class="social-icon"><i class="fas fa-phone-square"></i></a>
-                    </div>
-                    <p class="copyright">&copy Copyright Valary Lim 2019</p>
-                </div>                
+                    <p class="sectionTitle">get in touch</p>
+
+                    <a href="https://github.com/ValaryLim" class="contactLink">Github</a> | 
+                    <a href="https://www.linkedin.com/in/valarylim" class="contactLink">LinkedIn</a> | 
+                    <a href="mailto:valarylim@u.nus.edu" class="contactLink">Email</a> | 
+                    <a href="tel:+6596520809" class="contactLink">Mobile</a>
+                    
+                    <p class="copyright">&copy 2020 Valary Lim</p>
+                </div>              
             </div>
         </div>
     </div>
@@ -560,10 +574,8 @@
         src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
-    <script src="js/jquery.superslides.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/all.min.js"></script>
-    <script src="js/skill.bars.jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
